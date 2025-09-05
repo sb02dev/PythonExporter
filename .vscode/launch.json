@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: PyFlow",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "-f",
+                "tests/graphs/compound_001_simple.pygraph"
+            ],
+            "program": "E:/dev/projects/pyflowdev/PyFlow/pyflow.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current file",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}

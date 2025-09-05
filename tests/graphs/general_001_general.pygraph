@@ -1,0 +1,634 @@
+{
+    "name": "root",
+    "category": "",
+    "vars": [],
+    "nodes": [
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "clearConsole",
+            "owningGraphName": "root",
+            "name": "clearConsole",
+            "uuid": "46524f76-a9c4-4118-ad78-9f645b11946e",
+            "inputs": [
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "clearConsole_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "acc9299e-710c-450c-985f-d484d3d3535f",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outExec",
+                    "package": "PyFlowBase",
+                    "fullName": "clearConsole_outExec",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "38317762-f585-424a-84de-d41211336434",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "clearConsole",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput",
+                            "inPinId": 1,
+                            "lhsNodeUid": "46524f76-a9c4-4118-ad78-9f645b11946e",
+                            "rhsNodeUid": "bc60b632-0df6-4645-beab-c7d2259cdc04"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "outExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "38317762-f585-424a-84de-d41211336434",
+                                "destinationUUID": "0d6eaf54-d31a-45f6-8768-eb6fc6f58209",
+                                "sourceName": "clearConsole_outExec",
+                                "destinationName": "consoleOutput_inExec",
+                                "uuid": "e044adf2-ebb3-4abf-9bed-fde61f412d90",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "clearConsole"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">clearConsole</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -622.0,
+            "y": -292.0
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "consoleOutput",
+            "owningGraphName": "root",
+            "name": "consoleOutput",
+            "uuid": "bc60b632-0df6-4645-beab-c7d2259cdc04",
+            "inputs": [
+                {
+                    "name": "entity",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput_entity",
+                    "dataType": "AnyPin",
+                    "direction": 0,
+                    "value": "\"hello from converted world!\"",
+                    "uuid": "fb044872-5d04-4d59-895d-217cf5028db6",
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        16,
+                        256,
+                        512
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "entity",
+                        "wires": {}
+                    },
+                    "currDataType": "StringPin"
+                },
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "0d6eaf54-d31a-45f6-8768-eb6fc6f58209",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "clearConsole",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput",
+                            "inPinId": 1,
+                            "lhsNodeUid": "46524f76-a9c4-4118-ad78-9f645b11946e",
+                            "rhsNodeUid": "bc60b632-0df6-4645-beab-c7d2259cdc04"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "38317762-f585-424a-84de-d41211336434",
+                                "destinationUUID": "0d6eaf54-d31a-45f6-8768-eb6fc6f58209",
+                                "sourceName": "clearConsole_outExec",
+                                "destinationName": "consoleOutput_inExec",
+                                "uuid": "e044adf2-ebb3-4abf-9bed-fde61f412d90",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outExec",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput_outExec",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "139cecd1-47e8-4d8f-a589-074744755883",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "consoleOutput",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput1",
+                            "inPinId": 1,
+                            "lhsNodeUid": "bc60b632-0df6-4645-beab-c7d2259cdc04",
+                            "rhsNodeUid": "a75c6a5c-9ad0-4b95-8947-f065e0f0da34"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "outExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "139cecd1-47e8-4d8f-a589-074744755883",
+                                "destinationUUID": "c629c01b-d26d-4a35-9016-deef80d90f2a",
+                                "sourceName": "consoleOutput_outExec",
+                                "destinationName": "consoleOutput1_inExec",
+                                "uuid": "0bc1f821-ae58-44e7-b75c-0ce6c83b5066",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "consoleOutput"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">consoleOutput</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -481.0,
+            "y": -292.0
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "cliexit",
+            "owningGraphName": "root",
+            "name": "cliexit",
+            "uuid": "e535c082-89e1-4185-b43d-33444590e03a",
+            "inputs": [
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "cliexit_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "7cbe1109-b900-47a9-a039-b4e66da58d3f",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "consoleOutput1",
+                            "outPinId": 1,
+                            "rhsNodeName": "cliexit",
+                            "inPinId": 1,
+                            "lhsNodeUid": "a75c6a5c-9ad0-4b95-8947-f065e0f0da34",
+                            "rhsNodeUid": "e535c082-89e1-4185-b43d-33444590e03a"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "d502fc50-f808-49e9-8a84-98e69e1305fa",
+                                "destinationUUID": "7cbe1109-b900-47a9-a039-b4e66da58d3f",
+                                "sourceName": "consoleOutput1_outExec",
+                                "destinationName": "cliexit_inExec",
+                                "uuid": "811e8a2c-25b9-4ced-9909-8dde07fe972c",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [],
+            "meta": {
+                "var": {},
+                "label": "cliexit"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">cliexit</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -187.0,
+            "y": -292.0
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "StringLib",
+            "type": "startsWith",
+            "owningGraphName": "root",
+            "name": "startsWith",
+            "uuid": "00e15b96-6c81-4dbe-b22a-499ff903655d",
+            "inputs": [
+                {
+                    "name": "prefix",
+                    "package": "PyFlowBase",
+                    "fullName": "startsWith_prefix",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"va\"",
+                    "uuid": "3aee9c01-e41d-4426-83f5-49841d1f38b1",
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        1,
+                        16,
+                        256
+                    ],
+                    "structure": 3,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "prefix",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "s",
+                    "package": "PyFlowBase",
+                    "fullName": "startsWith_s",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"valami\"",
+                    "uuid": "c726d8c1-0cc7-4e85-9721-2ee80e64c497",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "s",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "startsWith_out",
+                    "dataType": "BoolPin",
+                    "direction": 1,
+                    "value": "true",
+                    "uuid": "3d42d856-ecdf-44a0-99a3-92a323cdd9e6",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "startsWith",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput1",
+                            "inPinId": 2,
+                            "lhsNodeUid": "00e15b96-6c81-4dbe-b22a-499ff903655d",
+                            "rhsNodeUid": "a75c6a5c-9ad0-4b95-8947-f065e0f0da34"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "3d42d856-ecdf-44a0-99a3-92a323cdd9e6",
+                                "destinationUUID": "7d442b1f-2647-42d2-ac07-1b110b5572af",
+                                "sourceName": "startsWith_out",
+                                "destinationName": "consoleOutput1_entity",
+                                "uuid": "b4be83a9-6672-4b0c-b415-7f000a280c8a",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "startsWith"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">startsWith</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -572.0,
+            "y": -177.0
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "consoleOutput",
+            "owningGraphName": "root",
+            "name": "consoleOutput1",
+            "uuid": "a75c6a5c-9ad0-4b95-8947-f065e0f0da34",
+            "inputs": [
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput1_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "c629c01b-d26d-4a35-9016-deef80d90f2a",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "consoleOutput",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput1",
+                            "inPinId": 1,
+                            "lhsNodeUid": "bc60b632-0df6-4645-beab-c7d2259cdc04",
+                            "rhsNodeUid": "a75c6a5c-9ad0-4b95-8947-f065e0f0da34"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "139cecd1-47e8-4d8f-a589-074744755883",
+                                "destinationUUID": "c629c01b-d26d-4a35-9016-deef80d90f2a",
+                                "sourceName": "consoleOutput_outExec",
+                                "destinationName": "consoleOutput1_inExec",
+                                "uuid": "0bc1f821-ae58-44e7-b75c-0ce6c83b5066",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "entity",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput1_entity",
+                    "dataType": "AnyPin",
+                    "direction": 0,
+                    "value": "true",
+                    "uuid": "7d442b1f-2647-42d2-ac07-1b110b5572af",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "startsWith",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput1",
+                            "inPinId": 2,
+                            "lhsNodeUid": "00e15b96-6c81-4dbe-b22a-499ff903655d",
+                            "rhsNodeUid": "a75c6a5c-9ad0-4b95-8947-f065e0f0da34"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        16,
+                        256,
+                        512
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "entity",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "3d42d856-ecdf-44a0-99a3-92a323cdd9e6",
+                                "destinationUUID": "7d442b1f-2647-42d2-ac07-1b110b5572af",
+                                "sourceName": "startsWith_out",
+                                "destinationName": "consoleOutput1_entity",
+                                "uuid": "b4be83a9-6672-4b0c-b415-7f000a280c8a",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "BoolPin"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outExec",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput1_outExec",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "d502fc50-f808-49e9-8a84-98e69e1305fa",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "consoleOutput1",
+                            "outPinId": 1,
+                            "rhsNodeName": "cliexit",
+                            "inPinId": 1,
+                            "lhsNodeUid": "a75c6a5c-9ad0-4b95-8947-f065e0f0da34",
+                            "rhsNodeUid": "e535c082-89e1-4185-b43d-33444590e03a"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "outExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "d502fc50-f808-49e9-8a84-98e69e1305fa",
+                                "destinationUUID": "7cbe1109-b900-47a9-a039-b4e66da58d3f",
+                                "sourceName": "consoleOutput1_outExec",
+                                "destinationName": "cliexit_inExec",
+                                "uuid": "811e8a2c-25b9-4ced-9909-8dde07fe972c",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "consoleOutput1"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">consoleOutput1</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -342.0,
+            "y": -292.0
+        }
+    ],
+    "depth": 1,
+    "isRoot": true,
+    "parentGraphName": "None",
+    "fileVersion": "3.0.0",
+    "activeGraph": "root"
+}

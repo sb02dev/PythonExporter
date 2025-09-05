@@ -1,0 +1,13 @@
+{
+    "python.analysis.extraPaths": [
+        "E:/dev/projects/pyflowdev/PyFlow",
+    ],
+    "pylint.path": [
+        "E:/dev/pyvenvs/pyflowdev/Scripts/pylint.exe",
+    ],
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
