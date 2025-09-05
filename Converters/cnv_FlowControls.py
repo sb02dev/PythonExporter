@@ -71,7 +71,7 @@ class PyCnvFlowControls(ConverterBase):
                            for pin in node.orderedOutputs.values()
                            if pin.isExec() and pin.hasConnections()]
         if len(connexecoutpins)>0:
-            yield connexecoutpins[0].getName()
+            exporter.call_named_pin(node, connexecoutpins[0].getName())
                 # TODO: this calls the first connected pin, however there
                 # could be multiple, which should be called from inside the
                 # node
@@ -100,7 +100,7 @@ class PyCnvFlowControls(ConverterBase):
         outs = sorted(list(node.outputs.values()), key=lambda pin: int(pin.name))
         for pin in outs:
             if pin.isExec():
-                yield pin.name # TODO: consider: `exporter.call_named_pin(pin)`
+                exporter.call_named_pin(node, pin.name)
 
 
     @staticmethod
@@ -119,7 +119,7 @@ class PyCnvFlowControls(ConverterBase):
         exporter.add_call(f"if {inpnames[0]}:\n")
         if hasTrue:
             exporter.increase_indent()
-            yield 'True'
+            exporter.call_named_pin(node, 'True')
             exporter.decrease_indent()
         else:
             exporter.add_call("  pass")
@@ -127,10 +127,10 @@ class PyCnvFlowControls(ConverterBase):
         if hasFalse:
             exporter.add_call("else:\n")
             exporter.increase_indent()
-            yield 'False'
+            exporter.call_named_pin(node, 'False')
             exporter.decrease_indent()
         # call 'After' pin
-        yield 'After'
+        exporter.call_named_pin(node, 'After')
 
 
     @staticmethod
@@ -156,7 +156,7 @@ class PyCnvFlowControls(ConverterBase):
                        for pin in node.orderedOutputs.values()
                        if pin.isExec()]
         if len(execoutpins)>0:
-            yield execoutpins[0].name
+            exporter.call_named_pin(node, execoutpins[0].name)
         # TODO: consider: these execpins should be called from `mem['func_python']`
 
 
@@ -167,4 +167,4 @@ class PyCnvFlowControls(ConverterBase):
                      *args, **kwargs):  # pylint: disable=unused-argument
         """Converts the reroute exec nodes"""
         exporter.set_node_processed(node)
-        yield 'out'
+        exporter.call_named_pin(node, 'out')

@@ -40,4 +40,4 @@ class PyCnvIOLib(ConverterBase):
         exporter.add_call(f"{exporter.get_out_list(node, post=' = ')}readAllText({', '.join(inpnames)})\n")
         exporter.set_node_processed(node)
         # call execute pin
-        yield 'outExec'
+        exporter.call_named_pin(node, 'outExec')

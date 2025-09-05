@@ -33,9 +33,6 @@ class PyCnvVariables(ConverterBase):
         exporter.add_call(f"{exporter.get_out_list(node, post=' = ')}" +
                           f"getVar({repr(node.var.name)})") # type: ignore
         exporter.set_node_processed(node)
-        # pure function
-        if False:  # pylint: disable=using-constant-test
-            yield
 
 
     @staticmethod
@@ -53,6 +50,3 @@ class PyCnvVariables(ConverterBase):
         exporter.add_call(f"{exporter.get_out_list(node, post=' = ')}" +
                           f"setVar({', '.join([repr(node.var.name)]+inpnames)})") # type: ignore
         exporter.set_node_processed(node)
-        # pure function
-        if False:  # pylint: disable=using-constant-test
-            yield

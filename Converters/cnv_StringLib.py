@@ -32,9 +32,6 @@ class PyCnvStringLib(ConverterBase):
             f"{inpnames[0]}.startswith({inpnames[1]})")
         # flag that we are processed
         exporter.set_node_processed(node)
-        # no yield
-        if False:  # pylint: disable=using-constant-test
-            yield
 
     @staticmethod
     def call_concat(exporter: PythonExporterImpl,

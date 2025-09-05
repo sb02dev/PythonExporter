@@ -23,9 +23,7 @@ class PyCnvConsoleFunctions(ConverterBase):
         exporter.add_call("sys.exit(0)")
         # flag that we are processed
         exporter.set_node_processed(node)
-        # no yield
-        if False:  # pylint: disable=using-constant-test
-            yield
+
 
     @staticmethod
     def clearConsole(exporter, node, inpnames: str, *args, **kwargs):  # pylint: disable=unused-argument,invalid-name
@@ -48,7 +46,7 @@ class PyCnvConsoleFunctions(ConverterBase):
         # export call
         exporter.add_call("clearConsole()")
         exporter.set_node_processed(node)
-        yield 'outExec'
+        exporter.call_named_pin(node, 'outExec')
 
 
     @staticmethod
@@ -56,4 +54,4 @@ class PyCnvConsoleFunctions(ConverterBase):
         """Convert the consoleOutput node type"""
         exporter.add_call(f"print({', '.join(inpnames)})")
         exporter.set_node_processed(node)
-        yield 'outExec'
+        exporter.call_named_pin(node, 'outExec')

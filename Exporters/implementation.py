@@ -125,15 +125,10 @@ class PythonExporterImpl:
         """Do the actual conversion of one Node to Python"""
         if hasattr(node, 'to_python'):
             # node has a full way to convert
-            for pin in node.to_python(self, inpnames, *args, *kwargs):  # type: ignore
-                # TODO: consider instead of this yielding mechanism, directly calling
-                # exporter.call_named_pin() from the handlers
-                self.call_named_pin(node, pin)
+            node.to_python(self, inpnames, *args, *kwargs)  # type: ignore
         elif (method := self.get_converter_method(node.__class__.__name__)) is not None:
             # we have a full way in our converter class to convert
-            for pin in method(
-                    self, node, inpnames, *args, **kwargs):
-                self.call_named_pin(node, pin)
+            method(self, node, inpnames, *args, **kwargs)
         else:
             # we will convert ourselves with drop-ins for each part (if exists)
             if not self.is_node_function_processed(node):
