@@ -37,7 +37,8 @@ class PyCnvIOLib(ConverterBase):
 """)
             exporter.set_node_function_processed(node)
         # export call
-        exporter.add_call(f"{exporter.get_out_list(node, post=' = ')}readAllText({', '.join(inpnames)})\n")
+        exporter.add_call(f"{exporter.get_out_list(node, post=' = ')}" + \
+                          f"readAllText({', '.join(inpnames)})\n")
         exporter.set_node_processed(node)
         # call execute pin
         exporter.call_named_pin(node, 'outExec')

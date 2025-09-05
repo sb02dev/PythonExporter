@@ -64,9 +64,9 @@ EXPORTER_VERSION = '{PythonExporter.version()}'
 
 """
 
-        rootGraph = pyFlowInstance.graphManager.get().findRootGraph()
+        root_graph = pyFlowInstance.graphManager.get().findRootGraph()
 
-        if len(rootGraph.getNodesList()) == 0:
+        if len(root_graph.getNodesList()) == 0:
             QMessageBox.warning(pyFlowInstance, "Warning", "Nothing to export!")
             return
 
@@ -86,11 +86,11 @@ EXPORTER_VERSION = '{PythonExporter.version()}'
                 converters.extend(curconverters.values())
 
         # initialize exporter
-        rootExporter = PythonExporterImpl(rootGraph, converters)
+        root_exporter = PythonExporterImpl(root_graph, converters)
 
         # collect unconnected input exec pins in the root graph
         startpins = []
-        for node in rootGraph.getNodesList():
+        for node in root_graph.getNodesList():
             for pin in node.inputs.values():
                 if pin.isExec() and not pin.hasConnections():
                     startpins.append(pin)
@@ -101,11 +101,11 @@ EXPORTER_VERSION = '{PythonExporter.version()}'
 
         # iterate over all of them
         for start in startpins:
-            rootExporter.add_call(f"""
+            root_exporter.add_call(f"""
 
 # ------- {start.getFullName()} -------
 """)
-            rootExporter.export_from_pin(start)
+            root_exporter.export_from_pin(start)
 
         # save the script
         if outFilePath=='':
@@ -116,24 +116,24 @@ EXPORTER_VERSION = '{PythonExporter.version()}'
             with open(outFilePath, "w", encoding='utf8') as f:
                 f.write(f"""{header}
 # ======================== VARIABLES AND PARAMETERS SETUP =========================
-{rootExporter.get_variables()}
+{root_exporter.get_variables()}
 
 # ================================ PACKAGE IMPORTS ================================
 # pylint: disable=wrong-import-position
-{rootExporter.get_imports()}
+{root_exporter.get_imports()}
 # pylint: enable=wrong-import-position
 
 # ================================= PACKAGE SETUPS ================================
-{rootExporter.get_setups()}
+{root_exporter.get_setups()}
 
 # ================================ SYSTEM FUNCTIONS ===============================
-{rootExporter.get_sys_functions()}
+{root_exporter.get_sys_functions()}
 
 # ============================== GRAPH IMPLEMENTATION =============================
-{rootExporter.get_functions()}
+{root_exporter.get_functions()}
 
 # ================================== MAIN PROGRAM =================================
-{rootExporter.get_calls()}
+{root_exporter.get_calls()}
 """
                 )
             print('saved!')
