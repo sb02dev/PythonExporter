@@ -42,5 +42,24 @@ class PyCnvDefaultLib(ConverterBase):
                      node: NodeBase,
                      inpnames: list[str],  # pylint: disable=unused-argument
                      *args, **kwargs):  # pylint: disable=unused-argument
-        """Converts the Join node"""
+        """Converts the makeInt node"""
         return f"{exporter.get_out_list(node, post=' = ')}{', '.join(inpnames)}"
+
+
+    @staticmethod
+    def call_makeDictElement(exporter: PythonExporterImpl,
+                             node: NodeBase,
+                             inpnames: list[str],  # pylint: disable=unused-argument
+                             *args, **kwargs):  # pylint: disable=unused-argument
+        """Converts the makeDictElement node"""
+        return f"{exporter.get_out_list(node, post=' = ')}({', '.join(inpnames)})"
+
+
+    @staticmethod
+    def makeDict(exporter: PythonExporterImpl,
+                 node: NodeBase,
+                 inpnames: list[str],  # pylint: disable=unused-argument
+                 *args, **kwargs):  # pylint: disable=unused-argument
+        firstline = f"{exporter.get_out_list(node, post=' = ')}dict(["
+        exporter.add_call(firstline +
+                          f"{(',\n'+' '*len(firstline)).join(inpnames[1:])}]), True")
