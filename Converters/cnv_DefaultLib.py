@@ -60,6 +60,16 @@ class PyCnvDefaultLib(ConverterBase):
                  node: NodeBase,
                  inpnames: list[str],  # pylint: disable=unused-argument
                  *args, **kwargs):  # pylint: disable=unused-argument
+        """Converts the makeDict node"""
         firstline = f"{exporter.get_out_list(node, post=' = ')}dict(["
         exporter.add_call(firstline +
                           f"{(',\n'+' '*len(firstline)).join(inpnames[1:])}]), True")
+
+
+    @staticmethod
+    def call_makeFloat(exporter: PythonExporterImpl,
+                 node: NodeBase,
+                 inpnames: list[str],  # pylint: disable=unused-argument
+                 *args, **kwargs):  # pylint: disable=unused-argument
+        """Converts the makeFloat node"""
+        return f"{exporter.get_out_list(node, post=' = ')}{', '.join(inpnames)}"

@@ -33,5 +33,24 @@ class PyCnvMathAbstractLib(ConverterBase):
                       node: NodeBase,
                       inpnames: list[str],  # pylint: disable=unused-argument
                       *args, **kwargs):  # pylint: disable=unused-argument
-        """Converts the NotEqual node"""
+        """Converts the Multiply node"""
         return f"{exporter.get_out_list(node, post=' = ')}({inpnames[0]} * {inpnames[1]})"
+
+
+    @staticmethod
+    def call_add(exporter: PythonExporterImpl,
+                 node: NodeBase,
+                 inpnames: list[str],  # pylint: disable=unused-argument
+                 *args, **kwargs):  # pylint: disable=unused-argument
+        """Converts the Add node"""
+        return f"{exporter.get_out_list(node, post=' = ')}({inpnames[0]} + {inpnames[1]})"
+
+
+    @staticmethod
+    def call_power(exporter: PythonExporterImpl,
+                   node: NodeBase,
+                   inpnames: list[str],  # pylint: disable=unused-argument
+                   *args, **kwargs):  # pylint: disable=unused-argument
+        """Converts the NotEqual node"""
+        exporter.add_import('math')
+        return f"{exporter.get_out_list(node, post=' = ')}math.pow({inpnames[0]}, {inpnames[1]}), True"
