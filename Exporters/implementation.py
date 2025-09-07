@@ -183,7 +183,7 @@ class PythonExporterImpl:
             self.add_call(method(self, node, inpnames, *args, **kwargs))
         else:
             self.add_call(
-                f"{self.get_indent_str()}{self.get_out_list(node, post=' = ')}" +
+                f"{self.get_out_list(node, post=' = ')}" +
                 f"{node.__class__.__name__}({', '.join(inpnames)})"
             )
         self.set_node_processed(node)
@@ -248,14 +248,14 @@ class PythonExporterImpl:
 
     def is_node_function_processed(self, node: NodeBase) -> bool:
         """Returns true if the node's function was already processed during the export"""
-        if node.__class__.__name__=='FunctionNode':
-            return 'FunctionNode_'+node.getData('function') in self._exported_node_functions
+        if node.__class__.__name__=='Function':
+            return 'Function_'+node.getData('function') in self._exported_node_functions
         return node.__class__.__name__ in self._exported_node_functions
 
     def set_node_function_processed(self, node: NodeBase):
         """Sets the node as its function is processed"""
-        if node.__class__.__name__ == 'FunctionNode':
-            self._exported_node_functions['FunctionNode_'+node.getData('function')] = node
+        if node.__class__.__name__ == 'Function':
+            self._exported_node_functions['Function_'+node.getData('function')] = node
         else:
             self._exported_node_functions[node.__class__.__name__] = node
 
