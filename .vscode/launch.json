@@ -10,7 +10,7 @@
             "request": "launch",
             "args": [
                 "-f",
-                "tests/graphs/general_002_makeDict.pygraph"
+                "tests/graphs/flow_002_function.pygraph"
             ],
             "program": "E:/dev/projects/pyflowdev/PyFlow/pyflow.py",
             "console": "integratedTerminal"

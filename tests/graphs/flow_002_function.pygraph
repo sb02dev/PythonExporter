@@ -1,0 +1,1624 @@
+{
+    "name": "root",
+    "category": "",
+    "vars": [],
+    "nodes": [
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "compound",
+            "owningGraphName": "root",
+            "name": "functions",
+            "uuid": "42b26cac-ab7f-472a-92e9-6b0ea20376e5",
+            "inputs": [],
+            "outputs": [],
+            "meta": {
+                "var": {},
+                "label": "functions"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">functions</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -950.0,
+            "y": -204.0,
+            "graphData": {
+                "name": "functions1",
+                "category": "",
+                "vars": [],
+                "nodes": [
+                    {
+                        "package": "PyFlowBase",
+                        "lib": null,
+                        "type": "compound",
+                        "owningGraphName": "functions1",
+                        "name": "add_one",
+                        "uuid": "fe02a54d-f083-4349-978c-588c56a3705d",
+                        "inputs": [
+                            {
+                                "name": "num",
+                                "package": "PyFlowBase",
+                                "fullName": "add_one_num",
+                                "dataType": "FloatPin",
+                                "direction": 0,
+                                "value": "0.0",
+                                "uuid": "b96e3bcf-3d85-4e1b-98ce-755cc08fb2bc",
+                                "linkedTo": [],
+                                "pinIndex": 1,
+                                "options": [
+                                    1,
+                                    256
+                                ],
+                                "structure": 3,
+                                "alwaysList": false,
+                                "alwaysSingle": false,
+                                "alwaysDict": false,
+                                "wrapper": {
+                                    "bLabelHidden": false,
+                                    "displayName": "num",
+                                    "wires": {}
+                                }
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "new_num",
+                                "package": "PyFlowBase",
+                                "fullName": "add_one_new_num",
+                                "dataType": "FloatPin",
+                                "direction": 1,
+                                "value": "0.0",
+                                "uuid": "bb32dc95-82e1-4468-a0b0-d46f5211c625",
+                                "linkedTo": [],
+                                "pinIndex": 1,
+                                "options": [
+                                    1,
+                                    256
+                                ],
+                                "structure": 3,
+                                "alwaysList": false,
+                                "alwaysSingle": false,
+                                "alwaysDict": false,
+                                "wrapper": {
+                                    "bLabelHidden": false,
+                                    "displayName": "new_num",
+                                    "wires": {}
+                                }
+                            }
+                        ],
+                        "meta": {
+                            "var": {},
+                            "label": "add_one"
+                        },
+                        "wrapper": {
+                            "collapsed": false,
+                            "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">add_one</p></body></html>",
+                            "exposeInputsToCompound": false,
+                            "groups": {
+                                "input": {
+                                    "graphInputs": true
+                                },
+                                "output": {
+                                    "graphOutputs": true
+                                }
+                            }
+                        },
+                        "x": -985.0,
+                        "y": -288.0,
+                        "graphData": {
+                            "name": "add_one2",
+                            "category": "",
+                            "vars": [],
+                            "nodes": [
+                                {
+                                    "package": "PyFlowBase",
+                                    "lib": null,
+                                    "type": "graphInputs",
+                                    "owningGraphName": "add_one2",
+                                    "name": "graphInputs",
+                                    "uuid": "96ed3aef-f227-4e56-a087-c5ef875ec00f",
+                                    "inputs": [],
+                                    "outputs": [
+                                        {
+                                            "name": "num",
+                                            "package": "PyFlowBase",
+                                            "fullName": "graphInputs_num",
+                                            "dataType": "FloatPin",
+                                            "direction": 1,
+                                            "value": "0.0",
+                                            "uuid": "02c440df-c293-4ce9-9980-6ede1a1477f3",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "graphInputs",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "add",
+                                                    "inPinId": 1,
+                                                    "lhsNodeUid": "96ed3aef-f227-4e56-a087-c5ef875ec00f",
+                                                    "rhsNodeUid": "85eaaa50-4a66-460e-b542-b5bc191a3b3d"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                32,
+                                                64,
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "num",
+                                                "wires": {
+                                                    "1": {
+                                                        "sourceUUID": "02c440df-c293-4ce9-9980-6ede1a1477f3",
+                                                        "destinationUUID": "d82d2c18-8854-4495-8e2d-37e71a1e0255",
+                                                        "sourceName": "graphInputs_num",
+                                                        "destinationName": "add_a",
+                                                        "uuid": "27e920dd-cf2b-43e8-9bda-7dbab1d5245e",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "meta": {
+                                        "var": {},
+                                        "label": "graphInputs"
+                                    },
+                                    "wrapper": {
+                                        "collapsed": false,
+                                        "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">graphInputs</p></body></html>",
+                                        "exposeInputsToCompound": false,
+                                        "groups": {
+                                            "input": {},
+                                            "output": {}
+                                        }
+                                    },
+                                    "x": -991.0,
+                                    "y": -290.0
+                                },
+                                {
+                                    "package": "PyFlowBase",
+                                    "lib": null,
+                                    "type": "graphOutputs",
+                                    "owningGraphName": "add_one2",
+                                    "name": "graphOutputs",
+                                    "uuid": "cb494b48-754c-49d0-ad97-c818aef9d423",
+                                    "inputs": [
+                                        {
+                                            "name": "new_num",
+                                            "package": "PyFlowBase",
+                                            "fullName": "graphOutputs_new_num",
+                                            "dataType": "FloatPin",
+                                            "direction": 0,
+                                            "value": "0.0",
+                                            "uuid": "e6573265-1c0a-4f82-b6e4-1515d0c2b9ad",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "add",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "graphOutputs",
+                                                    "inPinId": 1,
+                                                    "lhsNodeUid": "85eaaa50-4a66-460e-b542-b5bc191a3b3d",
+                                                    "rhsNodeUid": "cb494b48-754c-49d0-ad97-c818aef9d423"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                32,
+                                                64,
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "new_num",
+                                                "wires": {
+                                                    "1": {
+                                                        "sourceUUID": "c56a4e04-1df7-4bf1-a356-f12bb1252064",
+                                                        "destinationUUID": "e6573265-1c0a-4f82-b6e4-1515d0c2b9ad",
+                                                        "sourceName": "add_out",
+                                                        "destinationName": "graphOutputs_new_num",
+                                                        "uuid": "46154138-7e73-400d-ab79-b619e49a4f8e",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "outputs": [],
+                                    "meta": {
+                                        "var": {},
+                                        "label": "graphOutputs"
+                                    },
+                                    "wrapper": {
+                                        "collapsed": false,
+                                        "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">graphOutputs</p></body></html>",
+                                        "exposeInputsToCompound": false,
+                                        "groups": {
+                                            "input": {},
+                                            "output": {}
+                                        }
+                                    },
+                                    "x": -688.0,
+                                    "y": -290.0
+                                },
+                                {
+                                    "package": "PyFlowBase",
+                                    "lib": "MathAbstractLib",
+                                    "type": "add",
+                                    "owningGraphName": "add_one2",
+                                    "name": "add",
+                                    "uuid": "85eaaa50-4a66-460e-b542-b5bc191a3b3d",
+                                    "inputs": [
+                                        {
+                                            "name": "b",
+                                            "package": "PyFlowBase",
+                                            "fullName": "add_b",
+                                            "dataType": "AnyPin",
+                                            "direction": 0,
+                                            "value": "0.0",
+                                            "uuid": "ff4d57dc-91fb-4edb-8474-6da65531797e",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "makeFloat1",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "add",
+                                                    "inPinId": 2,
+                                                    "lhsNodeUid": "955a897d-5dae-458c-bfb4-4425bbc9fc4c",
+                                                    "rhsNodeUid": "85eaaa50-4a66-460e-b542-b5bc191a3b3d"
+                                                }
+                                            ],
+                                            "pinIndex": 2,
+                                            "options": [
+                                                16,
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "b",
+                                                "wires": {
+                                                    "2": {
+                                                        "sourceUUID": "36ed5e17-8457-4f5a-a269-7130ff099da5",
+                                                        "destinationUUID": "ff4d57dc-91fb-4edb-8474-6da65531797e",
+                                                        "sourceName": "makeFloat1_out",
+                                                        "destinationName": "add_b",
+                                                        "uuid": "428e0937-0fbd-46da-8ef5-770c7fcd3562",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            },
+                                            "currDataType": "FloatPin"
+                                        },
+                                        {
+                                            "name": "a",
+                                            "package": "PyFlowBase",
+                                            "fullName": "add_a",
+                                            "dataType": "AnyPin",
+                                            "direction": 0,
+                                            "value": "0.0",
+                                            "uuid": "d82d2c18-8854-4495-8e2d-37e71a1e0255",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "graphInputs",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "add",
+                                                    "inPinId": 1,
+                                                    "lhsNodeUid": "96ed3aef-f227-4e56-a087-c5ef875ec00f",
+                                                    "rhsNodeUid": "85eaaa50-4a66-460e-b542-b5bc191a3b3d"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                16,
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "a",
+                                                "wires": {
+                                                    "1": {
+                                                        "sourceUUID": "02c440df-c293-4ce9-9980-6ede1a1477f3",
+                                                        "destinationUUID": "d82d2c18-8854-4495-8e2d-37e71a1e0255",
+                                                        "sourceName": "graphInputs_num",
+                                                        "destinationName": "add_a",
+                                                        "uuid": "27e920dd-cf2b-43e8-9bda-7dbab1d5245e",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            },
+                                            "currDataType": "FloatPin"
+                                        }
+                                    ],
+                                    "outputs": [
+                                        {
+                                            "name": "out",
+                                            "package": "PyFlowBase",
+                                            "fullName": "add_out",
+                                            "dataType": "AnyPin",
+                                            "direction": 1,
+                                            "value": "0.0",
+                                            "uuid": "c56a4e04-1df7-4bf1-a356-f12bb1252064",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "add",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "graphOutputs",
+                                                    "inPinId": 1,
+                                                    "lhsNodeUid": "85eaaa50-4a66-460e-b542-b5bc191a3b3d",
+                                                    "rhsNodeUid": "cb494b48-754c-49d0-ad97-c818aef9d423"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                16,
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "out",
+                                                "wires": {
+                                                    "1": {
+                                                        "sourceUUID": "c56a4e04-1df7-4bf1-a356-f12bb1252064",
+                                                        "destinationUUID": "e6573265-1c0a-4f82-b6e4-1515d0c2b9ad",
+                                                        "sourceName": "add_out",
+                                                        "destinationName": "graphOutputs_new_num",
+                                                        "uuid": "46154138-7e73-400d-ab79-b619e49a4f8e",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            },
+                                            "currDataType": "FloatPin"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "var": {},
+                                        "label": "add"
+                                    },
+                                    "wrapper": {
+                                        "collapsed": false,
+                                        "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">add</p></body></html>",
+                                        "exposeInputsToCompound": false,
+                                        "groups": {
+                                            "input": {},
+                                            "output": {}
+                                        }
+                                    },
+                                    "x": -844.0,
+                                    "y": -290.0
+                                },
+                                {
+                                    "package": "PyFlowBase",
+                                    "lib": "DefaultLib",
+                                    "type": "makeFloat",
+                                    "owningGraphName": "add_one2",
+                                    "name": "makeFloat1",
+                                    "uuid": "955a897d-5dae-458c-bfb4-4425bbc9fc4c",
+                                    "inputs": [
+                                        {
+                                            "name": "f",
+                                            "package": "PyFlowBase",
+                                            "fullName": "makeFloat1_f",
+                                            "dataType": "FloatPin",
+                                            "direction": 0,
+                                            "value": "1.0",
+                                            "uuid": "749c065f-cd05-4850-b49d-5c20b1056ac0",
+                                            "linkedTo": [],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "f",
+                                                "wires": {}
+                                            }
+                                        }
+                                    ],
+                                    "outputs": [
+                                        {
+                                            "name": "out",
+                                            "package": "PyFlowBase",
+                                            "fullName": "makeFloat1_out",
+                                            "dataType": "FloatPin",
+                                            "direction": 1,
+                                            "value": "0.0",
+                                            "uuid": "36ed5e17-8457-4f5a-a269-7130ff099da5",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "makeFloat1",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "add",
+                                                    "inPinId": 2,
+                                                    "lhsNodeUid": "955a897d-5dae-458c-bfb4-4425bbc9fc4c",
+                                                    "rhsNodeUid": "85eaaa50-4a66-460e-b542-b5bc191a3b3d"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "out",
+                                                "wires": {
+                                                    "2": {
+                                                        "sourceUUID": "36ed5e17-8457-4f5a-a269-7130ff099da5",
+                                                        "destinationUUID": "ff4d57dc-91fb-4edb-8474-6da65531797e",
+                                                        "sourceName": "makeFloat1_out",
+                                                        "destinationName": "add_b",
+                                                        "uuid": "428e0937-0fbd-46da-8ef5-770c7fcd3562",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "meta": {
+                                        "var": {},
+                                        "label": "makeFloat1"
+                                    },
+                                    "wrapper": {
+                                        "collapsed": false,
+                                        "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeFloat1</p></body></html>",
+                                        "exposeInputsToCompound": false,
+                                        "groups": {
+                                            "input": {},
+                                            "output": {}
+                                        }
+                                    },
+                                    "x": -978.0,
+                                    "y": -195.0
+                                }
+                            ],
+                            "depth": 3,
+                            "isRoot": false,
+                            "parentGraphName": "functions1"
+                        }
+                    },
+                    {
+                        "package": "PyFlowBase",
+                        "lib": null,
+                        "type": "compound",
+                        "owningGraphName": "functions1",
+                        "name": "square",
+                        "uuid": "7921b606-148a-486b-97e5-c57965ec42cf",
+                        "inputs": [
+                            {
+                                "name": "num",
+                                "package": "PyFlowBase",
+                                "fullName": "square_num",
+                                "dataType": "FloatPin",
+                                "direction": 0,
+                                "value": "0.0",
+                                "uuid": "bbf569dd-7a71-41f0-98a8-ed87dacb095b",
+                                "linkedTo": [],
+                                "pinIndex": 1,
+                                "options": [
+                                    1,
+                                    256
+                                ],
+                                "structure": 3,
+                                "alwaysList": false,
+                                "alwaysSingle": false,
+                                "alwaysDict": false,
+                                "wrapper": {
+                                    "bLabelHidden": false,
+                                    "displayName": "num",
+                                    "wires": {}
+                                }
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "new_num",
+                                "package": "PyFlowBase",
+                                "fullName": "square_new_num",
+                                "dataType": "FloatPin",
+                                "direction": 1,
+                                "value": "0.0",
+                                "uuid": "f65b76e0-ff26-4b18-975b-b8f28d0f3be3",
+                                "linkedTo": [],
+                                "pinIndex": 1,
+                                "options": [
+                                    1,
+                                    256
+                                ],
+                                "structure": 3,
+                                "alwaysList": false,
+                                "alwaysSingle": false,
+                                "alwaysDict": false,
+                                "wrapper": {
+                                    "bLabelHidden": false,
+                                    "displayName": "new_num",
+                                    "wires": {}
+                                }
+                            }
+                        ],
+                        "meta": {
+                            "var": {},
+                            "label": "square"
+                        },
+                        "wrapper": {
+                            "collapsed": false,
+                            "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">square</p></body></html>",
+                            "exposeInputsToCompound": false,
+                            "groups": {
+                                "input": {
+                                    "graphInputs2": true
+                                },
+                                "output": {
+                                    "graphOutputs3": true
+                                }
+                            }
+                        },
+                        "x": -979.0,
+                        "y": -180.0,
+                        "graphData": {
+                            "name": "square3",
+                            "category": "",
+                            "vars": [],
+                            "nodes": [
+                                {
+                                    "package": "PyFlowBase",
+                                    "lib": null,
+                                    "type": "graphInputs",
+                                    "owningGraphName": "square3",
+                                    "name": "graphInputs2",
+                                    "uuid": "1443299c-aad5-4eb2-83e3-7ceccfb30b49",
+                                    "inputs": [],
+                                    "outputs": [
+                                        {
+                                            "name": "num",
+                                            "package": "PyFlowBase",
+                                            "fullName": "graphInputs2_num",
+                                            "dataType": "FloatPin",
+                                            "direction": 1,
+                                            "value": "0.0",
+                                            "uuid": "ca1a1bc5-fcf7-4a0e-810b-1232f47aef7b",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "graphInputs2",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "power",
+                                                    "inPinId": 1,
+                                                    "lhsNodeUid": "1443299c-aad5-4eb2-83e3-7ceccfb30b49",
+                                                    "rhsNodeUid": "3acf5f07-b173-4308-a8df-6127ed9ca9ee"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                32,
+                                                64,
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "num",
+                                                "wires": {
+                                                    "1": {
+                                                        "sourceUUID": "ca1a1bc5-fcf7-4a0e-810b-1232f47aef7b",
+                                                        "destinationUUID": "6e4b19ad-a346-4aa6-a260-b930dda91594",
+                                                        "sourceName": "graphInputs2_num",
+                                                        "destinationName": "power_x",
+                                                        "uuid": "93c82688-a545-4e23-83bc-1e949a89b3bc",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "meta": {
+                                        "var": {},
+                                        "label": "graphInputs2"
+                                    },
+                                    "wrapper": {
+                                        "collapsed": false,
+                                        "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">graphInputs2</p></body></html>",
+                                        "exposeInputsToCompound": false,
+                                        "groups": {
+                                            "input": {},
+                                            "output": {}
+                                        }
+                                    },
+                                    "x": -958.0,
+                                    "y": -240.0
+                                },
+                                {
+                                    "package": "PyFlowBase",
+                                    "lib": null,
+                                    "type": "graphOutputs",
+                                    "owningGraphName": "square3",
+                                    "name": "graphOutputs3",
+                                    "uuid": "3d56915e-46f4-42d2-b077-51aefd72d428",
+                                    "inputs": [
+                                        {
+                                            "name": "new_num",
+                                            "package": "PyFlowBase",
+                                            "fullName": "graphOutputs3_new_num",
+                                            "dataType": "FloatPin",
+                                            "direction": 0,
+                                            "value": "0.0",
+                                            "uuid": "a0108c5d-8887-4651-b2d3-0fa4f8a8b28f",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "power",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "graphOutputs3",
+                                                    "inPinId": 1,
+                                                    "lhsNodeUid": "3acf5f07-b173-4308-a8df-6127ed9ca9ee",
+                                                    "rhsNodeUid": "3d56915e-46f4-42d2-b077-51aefd72d428"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                32,
+                                                64,
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "new_num",
+                                                "wires": {
+                                                    "1": {
+                                                        "sourceUUID": "72a40340-f064-4090-b71e-9c4b209a64b1",
+                                                        "destinationUUID": "a0108c5d-8887-4651-b2d3-0fa4f8a8b28f",
+                                                        "sourceName": "power_out",
+                                                        "destinationName": "graphOutputs3_new_num",
+                                                        "uuid": "cca69141-15d9-4180-9986-a3e5def0c191",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "outputs": [],
+                                    "meta": {
+                                        "var": {},
+                                        "label": "graphOutputs3"
+                                    },
+                                    "wrapper": {
+                                        "collapsed": false,
+                                        "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">graphOutputs3</p></body></html>",
+                                        "exposeInputsToCompound": false,
+                                        "groups": {
+                                            "input": {},
+                                            "output": {}
+                                        }
+                                    },
+                                    "x": -673.0,
+                                    "y": -238.0
+                                },
+                                {
+                                    "package": "PyFlowBase",
+                                    "lib": "MathLib",
+                                    "type": "power",
+                                    "owningGraphName": "square3",
+                                    "name": "power",
+                                    "uuid": "3acf5f07-b173-4308-a8df-6127ed9ca9ee",
+                                    "inputs": [
+                                        {
+                                            "name": "x",
+                                            "package": "PyFlowBase",
+                                            "fullName": "power_x",
+                                            "dataType": "FloatPin",
+                                            "direction": 0,
+                                            "value": "0.0",
+                                            "uuid": "6e4b19ad-a346-4aa6-a260-b930dda91594",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "graphInputs2",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "power",
+                                                    "inPinId": 1,
+                                                    "lhsNodeUid": "1443299c-aad5-4eb2-83e3-7ceccfb30b49",
+                                                    "rhsNodeUid": "3acf5f07-b173-4308-a8df-6127ed9ca9ee"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "x",
+                                                "wires": {
+                                                    "1": {
+                                                        "sourceUUID": "ca1a1bc5-fcf7-4a0e-810b-1232f47aef7b",
+                                                        "destinationUUID": "6e4b19ad-a346-4aa6-a260-b930dda91594",
+                                                        "sourceName": "graphInputs2_num",
+                                                        "destinationName": "power_x",
+                                                        "uuid": "93c82688-a545-4e23-83bc-1e949a89b3bc",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "name": "y",
+                                            "package": "PyFlowBase",
+                                            "fullName": "power_y",
+                                            "dataType": "FloatPin",
+                                            "direction": 0,
+                                            "value": "0.0",
+                                            "uuid": "fa2efd85-9684-4fbb-8eed-aae1d4af90ca",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "makeFloat4",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "power",
+                                                    "inPinId": 2,
+                                                    "lhsNodeUid": "daaa278f-7a2b-4948-9203-e686bafdb0a4",
+                                                    "rhsNodeUid": "3acf5f07-b173-4308-a8df-6127ed9ca9ee"
+                                                }
+                                            ],
+                                            "pinIndex": 2,
+                                            "options": [
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "y",
+                                                "wires": {
+                                                    "2": {
+                                                        "sourceUUID": "82aabcf3-2c86-4408-85fc-fb766c0175b6",
+                                                        "destinationUUID": "fa2efd85-9684-4fbb-8eed-aae1d4af90ca",
+                                                        "sourceName": "makeFloat4_out",
+                                                        "destinationName": "power_y",
+                                                        "uuid": "adbad4ff-3bee-466f-b1fc-9bf34283ef37",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "outputs": [
+                                        {
+                                            "name": "out",
+                                            "package": "PyFlowBase",
+                                            "fullName": "power_out",
+                                            "dataType": "FloatPin",
+                                            "direction": 1,
+                                            "value": "0.0",
+                                            "uuid": "72a40340-f064-4090-b71e-9c4b209a64b1",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "power",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "graphOutputs3",
+                                                    "inPinId": 1,
+                                                    "lhsNodeUid": "3acf5f07-b173-4308-a8df-6127ed9ca9ee",
+                                                    "rhsNodeUid": "3d56915e-46f4-42d2-b077-51aefd72d428"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "out",
+                                                "wires": {
+                                                    "1": {
+                                                        "sourceUUID": "72a40340-f064-4090-b71e-9c4b209a64b1",
+                                                        "destinationUUID": "a0108c5d-8887-4651-b2d3-0fa4f8a8b28f",
+                                                        "sourceName": "power_out",
+                                                        "destinationName": "graphOutputs3_new_num",
+                                                        "uuid": "cca69141-15d9-4180-9986-a3e5def0c191",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "name": "result",
+                                            "package": "PyFlowBase",
+                                            "fullName": "power_result",
+                                            "dataType": "BoolPin",
+                                            "direction": 1,
+                                            "value": "false",
+                                            "uuid": "e2224e8f-ae16-4f18-a326-c282bd6f0fe2",
+                                            "linkedTo": [],
+                                            "pinIndex": 2,
+                                            "options": [
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "result",
+                                                "wires": {}
+                                            }
+                                        }
+                                    ],
+                                    "meta": {
+                                        "var": {},
+                                        "label": "power"
+                                    },
+                                    "wrapper": {
+                                        "collapsed": false,
+                                        "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">power</p></body></html>",
+                                        "exposeInputsToCompound": false,
+                                        "groups": {
+                                            "input": {},
+                                            "output": {}
+                                        }
+                                    },
+                                    "x": -818.0,
+                                    "y": -232.0
+                                },
+                                {
+                                    "package": "PyFlowBase",
+                                    "lib": "DefaultLib",
+                                    "type": "makeFloat",
+                                    "owningGraphName": "square3",
+                                    "name": "makeFloat4",
+                                    "uuid": "daaa278f-7a2b-4948-9203-e686bafdb0a4",
+                                    "inputs": [
+                                        {
+                                            "name": "f",
+                                            "package": "PyFlowBase",
+                                            "fullName": "makeFloat4_f",
+                                            "dataType": "FloatPin",
+                                            "direction": 0,
+                                            "value": "2.0",
+                                            "uuid": "f22bd744-21ad-4d38-9924-eeb10410d1bd",
+                                            "linkedTo": [],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "f",
+                                                "wires": {}
+                                            }
+                                        }
+                                    ],
+                                    "outputs": [
+                                        {
+                                            "name": "out",
+                                            "package": "PyFlowBase",
+                                            "fullName": "makeFloat4_out",
+                                            "dataType": "FloatPin",
+                                            "direction": 1,
+                                            "value": "0.0",
+                                            "uuid": "82aabcf3-2c86-4408-85fc-fb766c0175b6",
+                                            "linkedTo": [
+                                                {
+                                                    "lhsNodeName": "makeFloat4",
+                                                    "outPinId": 1,
+                                                    "rhsNodeName": "power",
+                                                    "inPinId": 2,
+                                                    "lhsNodeUid": "daaa278f-7a2b-4948-9203-e686bafdb0a4",
+                                                    "rhsNodeUid": "3acf5f07-b173-4308-a8df-6127ed9ca9ee"
+                                                }
+                                            ],
+                                            "pinIndex": 1,
+                                            "options": [
+                                                256
+                                            ],
+                                            "structure": 0,
+                                            "alwaysList": false,
+                                            "alwaysSingle": false,
+                                            "alwaysDict": false,
+                                            "wrapper": {
+                                                "bLabelHidden": false,
+                                                "displayName": "out",
+                                                "wires": {
+                                                    "2": {
+                                                        "sourceUUID": "82aabcf3-2c86-4408-85fc-fb766c0175b6",
+                                                        "destinationUUID": "fa2efd85-9684-4fbb-8eed-aae1d4af90ca",
+                                                        "sourceName": "makeFloat4_out",
+                                                        "destinationName": "power_y",
+                                                        "uuid": "adbad4ff-3bee-466f-b1fc-9bf34283ef37",
+                                                        "hOffsetL": "0.0",
+                                                        "hOffsetR": "0.0",
+                                                        "hOffsetLSShape": "0.0",
+                                                        "hOffsetRSShape": "0.0",
+                                                        "vOffset": "0.0",
+                                                        "vOffsetSShape": "0.0",
+                                                        "snapVToFirst": 1,
+                                                        "snapVToSecond": 0
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "meta": {
+                                        "var": {},
+                                        "label": "makeFloat4"
+                                    },
+                                    "wrapper": {
+                                        "collapsed": false,
+                                        "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeFloat4</p></body></html>",
+                                        "exposeInputsToCompound": false,
+                                        "groups": {
+                                            "input": {},
+                                            "output": {}
+                                        }
+                                    },
+                                    "x": -936.0,
+                                    "y": -139.0
+                                }
+                            ],
+                            "depth": 3,
+                            "isRoot": false,
+                            "parentGraphName": "functions1"
+                        }
+                    }
+                ],
+                "depth": 2,
+                "isRoot": false,
+                "parentGraphName": "root"
+            }
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeFloat",
+            "owningGraphName": "root",
+            "name": "makeFloat",
+            "uuid": "2b2e9f4a-c3c2-4b50-b7f8-8ddc165622cc",
+            "inputs": [
+                {
+                    "name": "f",
+                    "package": "PyFlowBase",
+                    "fullName": "makeFloat_f",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "10.0",
+                    "uuid": "b3cb3d25-4ac2-44a4-9bc6-4da90bd56300",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "f",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeFloat_out",
+                    "dataType": "FloatPin",
+                    "direction": 1,
+                    "value": "10.0",
+                    "uuid": "265820f8-1fcf-461b-a3f2-92fdf8d9af28",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeFloat",
+                            "outPinId": 1,
+                            "rhsNodeName": "Function",
+                            "inPinId": 2,
+                            "lhsNodeUid": "2b2e9f4a-c3c2-4b50-b7f8-8ddc165622cc",
+                            "rhsNodeUid": "98dca705-83cf-47b6-8e85-8e629ea3577d"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "265820f8-1fcf-461b-a3f2-92fdf8d9af28",
+                                "destinationUUID": "b225b63d-2bbb-4fb9-9cf0-823ff8f01f80",
+                                "sourceName": "makeFloat_out",
+                                "destinationName": "Function_num",
+                                "uuid": "a27e7ea0-0937-4437-8ee1-340de920c087",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeFloat"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeFloat</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -828.0,
+            "y": -143.0
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": null,
+            "type": "consoleOutput",
+            "owningGraphName": "root",
+            "name": "consoleOutput",
+            "uuid": "1324adf3-298f-4d01-a4fc-498fcd892eac",
+            "inputs": [
+                {
+                    "name": "entity",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput_entity",
+                    "dataType": "AnyPin",
+                    "direction": 0,
+                    "value": "0.0",
+                    "uuid": "6cdedec4-f23c-490d-84aa-d75b40533187",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "Function5",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput",
+                            "inPinId": 2,
+                            "lhsNodeUid": "c0713673-62e6-4f0e-8041-4e7b97c76a1b",
+                            "rhsNodeUid": "1324adf3-298f-4d01-a4fc-498fcd892eac"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        1,
+                        2,
+                        16,
+                        256,
+                        512
+                    ],
+                    "structure": 3,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "entity",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "7c3db336-4a8a-4d35-8fe6-fcb8a13d3592",
+                                "destinationUUID": "6cdedec4-f23c-490d-84aa-d75b40533187",
+                                "sourceName": "Function5_new_num",
+                                "destinationName": "consoleOutput_entity",
+                                "uuid": "dcca4020-1f38-4348-b3eb-566bdf97bb40",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    },
+                    "currDataType": "FloatPin"
+                },
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "1c3d3c4b-638b-483b-8a70-37b33a3dab0d",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outExec",
+                    "package": "PyFlowBase",
+                    "fullName": "consoleOutput_outExec",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "9a93657b-192e-4578-84e4-8bce4b6ac318",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "outExec",
+                        "wires": {}
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "consoleOutput"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">consoleOutput</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -427.0,
+            "y": -185.0
+        },
+        {
+            "package": "PythonExporter",
+            "lib": null,
+            "type": "Function",
+            "owningGraphName": "root",
+            "name": "Function",
+            "uuid": "98dca705-83cf-47b6-8e85-8e629ea3577d",
+            "inputs": [
+                {
+                    "name": "function",
+                    "package": "PyFlowBase",
+                    "fullName": "Function_function",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"functions.add_one\"",
+                    "uuid": "b7ff2ecc-a637-4c20-ae3d-a85203bca68b",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "function",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "num",
+                    "package": "PyFlowBase",
+                    "fullName": "Function_num",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "10.0",
+                    "uuid": "b225b63d-2bbb-4fb9-9cf0-823ff8f01f80",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeFloat",
+                            "outPinId": 1,
+                            "rhsNodeName": "Function",
+                            "inPinId": 2,
+                            "lhsNodeUid": "2b2e9f4a-c3c2-4b50-b7f8-8ddc165622cc",
+                            "rhsNodeUid": "98dca705-83cf-47b6-8e85-8e629ea3577d"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "num",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "265820f8-1fcf-461b-a3f2-92fdf8d9af28",
+                                "destinationUUID": "b225b63d-2bbb-4fb9-9cf0-823ff8f01f80",
+                                "sourceName": "makeFloat_out",
+                                "destinationName": "Function_num",
+                                "uuid": "a27e7ea0-0937-4437-8ee1-340de920c087",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "new_num",
+                    "package": "PyFlowBase",
+                    "fullName": "Function_new_num",
+                    "dataType": "FloatPin",
+                    "direction": 1,
+                    "value": "0.0",
+                    "uuid": "a98d5b2b-7681-49b3-bff1-b6aff6b78e03",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "Function",
+                            "outPinId": 1,
+                            "rhsNodeName": "Function5",
+                            "inPinId": 2,
+                            "lhsNodeUid": "98dca705-83cf-47b6-8e85-8e629ea3577d",
+                            "rhsNodeUid": "c0713673-62e6-4f0e-8041-4e7b97c76a1b"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        1,
+                        256
+                    ],
+                    "structure": 3,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "new_num",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "a98d5b2b-7681-49b3-bff1-b6aff6b78e03",
+                                "destinationUUID": "ff8ea669-4b90-4e74-8dde-093708e26fe6",
+                                "sourceName": "Function_new_num",
+                                "destinationName": "Function5_num",
+                                "uuid": "e428fc56-8809-45cd-86eb-67fd947e28df",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "Function"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Function</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {
+                        "add_one": true
+                    },
+                    "output": {
+                        "add_one": true
+                    }
+                }
+            },
+            "x": -727.0,
+            "y": -171.0
+        },
+        {
+            "package": "PythonExporter",
+            "lib": null,
+            "type": "Function",
+            "owningGraphName": "root",
+            "name": "Function5",
+            "uuid": "c0713673-62e6-4f0e-8041-4e7b97c76a1b",
+            "inputs": [
+                {
+                    "name": "num",
+                    "package": "PyFlowBase",
+                    "fullName": "Function5_num",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "0.0",
+                    "uuid": "ff8ea669-4b90-4e74-8dde-093708e26fe6",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "Function",
+                            "outPinId": 1,
+                            "rhsNodeName": "Function5",
+                            "inPinId": 2,
+                            "lhsNodeUid": "98dca705-83cf-47b6-8e85-8e629ea3577d",
+                            "rhsNodeUid": "c0713673-62e6-4f0e-8041-4e7b97c76a1b"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        1,
+                        256
+                    ],
+                    "structure": 3,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "num",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "a98d5b2b-7681-49b3-bff1-b6aff6b78e03",
+                                "destinationUUID": "ff8ea669-4b90-4e74-8dde-093708e26fe6",
+                                "sourceName": "Function_new_num",
+                                "destinationName": "Function5_num",
+                                "uuid": "e428fc56-8809-45cd-86eb-67fd947e28df",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "function",
+                    "package": "PyFlowBase",
+                    "fullName": "Function5_function",
+                    "dataType": "StringPin",
+                    "direction": 0,
+                    "value": "\"functions.square\"",
+                    "uuid": "4ec17a63-5082-4a66-9ed3-e7eb70884a2d",
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "function",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "new_num",
+                    "package": "PyFlowBase",
+                    "fullName": "Function5_new_num",
+                    "dataType": "FloatPin",
+                    "direction": 1,
+                    "value": "0.0",
+                    "uuid": "7c3db336-4a8a-4d35-8fe6-fcb8a13d3592",
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "Function5",
+                            "outPinId": 1,
+                            "rhsNodeName": "consoleOutput",
+                            "inPinId": 2,
+                            "lhsNodeUid": "c0713673-62e6-4f0e-8041-4e7b97c76a1b",
+                            "rhsNodeUid": "1324adf3-298f-4d01-a4fc-498fcd892eac"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        1,
+                        256
+                    ],
+                    "structure": 3,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "new_num",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "7c3db336-4a8a-4d35-8fe6-fcb8a13d3592",
+                                "destinationUUID": "6cdedec4-f23c-490d-84aa-d75b40533187",
+                                "sourceName": "Function5_new_num",
+                                "destinationName": "consoleOutput_entity",
+                                "uuid": "dcca4020-1f38-4348-b3eb-566bdf97bb40",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "Function5"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Function5</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {
+                        "square": true
+                    },
+                    "output": {
+                        "square": true
+                    }
+                }
+            },
+            "x": -591.0,
+            "y": -185.0
+        }
+    ],
+    "depth": 1,
+    "isRoot": true,
+    "parentGraphName": "None",
+    "fileVersion": "3.0.0",
+    "activeGraph": "root"
+}
